@@ -16,21 +16,21 @@ set autoindent      " align the new line indent with the previous line
 set relativenumber  " add relative line numberings
 
 " remap jump to a subject in vim help
-map <C-å> <C-]>
+" map <C-å> <C-]>
 
 " Lilypond configurations
-"filetype off
-"set runtimepath+=/usr/local/share/lilypond/2.18.2/vim/ "
+filetype off
+" set runtimepath+=/usr/local/share/lilypond/2.18.2/vim/ "
 
 " Configure Vundle
-set rtp+=~/.vim/bundle/Vundle.vim
+set rtp+=~/vimfiles/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'b4winckler/vim-angry', {'rtp': 'plugin/'}
+Plugin 'b4winckler/vim-angry', {'rtp': 'plugin'}
 Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-fugitive'
-Plugin 'ledger/vim-ledger'
+"Plugin 'ledger/vim-ledger'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'tpope/vim-surround'
@@ -78,3 +78,7 @@ let g:vim_markdown_folding_disabled = 1
 
 " Fugitive
 nnoremap <Leader>gs :Gstat<CR>
+
+" Gvim
+:set guioptions-=T
+:set guioptions-=m
