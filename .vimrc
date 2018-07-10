@@ -72,8 +72,9 @@ let g:ledger_default_commodity = 'kr'
 let g:ledger_commodity_before = 0
 let g:ledger_commodity_sep = ' '
 nnoremap <Leader>la $:LedgerAlign<CR>
+nnoremap <Leader>ll $:call ledger#autocomplete_and_align()<CR>:LedgerAlign<CR>
+nnoremap <Leader>lk o; :kvitto:<Esc>^
 nnoremap <Leader>le :call ledger#entry()<cr>
-nnoremap <Leader>ld 0f*wwyw0PI20lla/lla/WdWw
 
 " Markdown
 let g:vim_markdown_folding_disabled = 1
