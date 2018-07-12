@@ -12,6 +12,9 @@ export EDITOR="$VISUAL"
 # Set .vimrc
 export VIMRC=$HOME/.vimrc
 
+# Add ~/bin to path
+export PATH=$PATH:$HOME/bin
+
 # Aliases
 alias ll="ls -al"
 alias ly="lilypond"
