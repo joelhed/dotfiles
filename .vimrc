@@ -60,7 +60,7 @@ nnoremap <Leader>v "*p
 nnoremap <Leader>k :NERDTreeToggle<CR>
 nnoremap <Leader>s :update<CR>
 nnoremap <Leader>tm 0iif __name__ == "__main__":<CR>pass<Esc>^
-nnoremap <Leader>pt :!python setup.py test<CR>
+nnoremap <Leader>pd oimport pdb; pdb.set_trace()<Esc>^
 nnoremap <Leader>r :s/<C-r>"/
 nnoremap <Leader>m :make<CR>
 nnoremap <Leader>n :cn<CR>
