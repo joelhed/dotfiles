@@ -15,6 +15,9 @@ export VIMRC=$HOME/.vimrc
 # Add ~/bin to path
 export PATH=$PATH:$HOME/bin
 
+# Make sure pipenv uses python3.6
+export PIPENV_PYTHON=3.6
+
 # Aliases
 alias ll="ls -al"
 alias ly="lilypond"
