@@ -66,6 +66,12 @@ nnoremap <Leader>m :make<CR>
 nnoremap <Leader>n :cn<CR>
 nnoremap <Leader>p :cp<CR>
 
+" Search highlighting
+set incsearch
+set hlsearch
+" remove highlighting until the next search
+nnoremap <Leader>h :noh<CR>
+
 "Ledger
 let g:ledger_align_at = 60
 let g:ledger_default_commodity = 'kr'
