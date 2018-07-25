@@ -89,3 +89,7 @@ let g:vim_markdown_folding_disabled = 1
 
 " Fugitive
 nnoremap <Leader>gs :Gstat<CR>
+
+" Ctrlp
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store'
+let g:ctrlp_working_path_mode = 0
