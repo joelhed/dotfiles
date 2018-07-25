@@ -3,7 +3,6 @@ set nocompatible
 set showcmd
 set ruler
 let mapleader = ","
-filetype plugin indent on
 
 syntax on
 set textwidth=79    " lines longer than 79 columns will be broken
@@ -18,8 +17,9 @@ set relativenumber  " add relative line numberings
 " remap jump to a subject in vim help
 map <C-å> <C-]>
 
+filetype off
+
 " Lilypond configurations
-"filetype off
 "set runtimepath+=/usr/local/share/lilypond/2.18.2/vim/ "
 
 " Configure Vundle
