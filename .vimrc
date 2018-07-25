@@ -37,6 +37,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'alvan/vim-closetag'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
 "Plugin 'metakirby5/codi.vim'
 "Plugin 'posva/vim-vue'
 
