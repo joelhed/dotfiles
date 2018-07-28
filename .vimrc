@@ -5,7 +5,7 @@ set ruler
 let mapleader = ","
 
 syntax on
-set textwidth=79    " lines longer than 79 columns will be broken
+set textwidth=88    " lines longer than 88 columns will be broken
 set shiftwidth=4    " operation >> indents 4 columns; << unindents 4 columns
 set tabstop=4       " a hard TAB displays as 4 columns
 set expandtab       " insert spaces when hitting TABs
