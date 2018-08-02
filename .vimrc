@@ -63,6 +63,7 @@ nnoremap <Leader>k :NERDTreeToggle<CR>
 nnoremap <Leader>s :update<CR>
 nnoremap <Leader>tm 0iif __name__ == "__main__":<CR>pass<Esc>^
 nnoremap <Leader>pd oimport pdb; pdb.set_trace()<Esc>^
+nnoremap <Leader>pl olog = logging.getLogger(__name__)<Esc>^
 nnoremap <Leader>r :s/<C-r>"/
 nnoremap <Leader>m :make<CR>
 nnoremap <Leader>n :cn<CR>
