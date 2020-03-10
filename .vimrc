@@ -38,6 +38,7 @@ Plugin 'alvan/vim-closetag'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
+Plugin 'OmniSharp/omnisharp-vim'
 "Plugin 'metakirby5/codi.vim'
 "Plugin 'posva/vim-vue'
 
