@@ -2,6 +2,10 @@ set nocompatible
 
 set showcmd
 set ruler
+
+set exrc            " Read the .vimrc file from the current directory
+set secure          " Make sure that such .vimrc files can't run arbitrary stuff
+
 let mapleader = ","
 
 syntax on
@@ -39,6 +43,7 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
 Plugin 'OmniSharp/omnisharp-vim'
+Plugin 'ElmCast/elm-vim'
 "Plugin 'metakirby5/codi.vim'
 "Plugin 'posva/vim-vue'
 
@@ -93,5 +98,13 @@ let g:vim_markdown_folding_disabled = 1
 nnoremap <Leader>gs :Gstat<CR>
 
 " Ctrlp
-let g:ctrlp_custom_ignore = 'node_modules\|DS_Store'
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  'node_modules\|DS_Store|\v[\/]\.(git|hg|svn)$',
+  \ 'file': '\v\.(exe|so|dll)$',
+  \ 'link': 'some_bad_symbolic_links',
+  \ }
 let g:ctrlp_working_path_mode = 0
+
+" C# / OmniSharp
+" Use the stdio version of OmniSharp-roslyn
+let g:OmniSharp_server_stdio = 1
