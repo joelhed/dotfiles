@@ -15,9 +15,6 @@ export VIMRC=$HOME/.vimrc
 # Add ~/bin to path
 export PATH=$PATH:$HOME/bin
 
-# Make sure pipenv uses python3.6
-export PIPENV_PYTHON=3.6
-
 # Aliases
 alias ll="ls -al"
 alias ly="lilypond"
@@ -25,17 +22,3 @@ alias pre="open -a preview"
 alias today="date +%F"
 alias gits="git status"
 alias cl="rlwrap sbcl"
-
-# Codi
-# Usage: codi [filetype] [filename]
-codi() {
-  local syntax="${1:-python}"
-  shift
-  vim -c \
-    "let g:startify_disable_at_vimenter = 1 |\
-    set bt=nofile ls=0 noru nonu nornu |\
-    hi ColorColumn ctermbg=NONE |\
-    hi VertSplit ctermbg=NONE |\
-    hi NonText ctermfg=0 |\
-    Codi $syntax" "$@"
-}
