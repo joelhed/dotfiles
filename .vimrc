@@ -68,13 +68,20 @@ nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
 nnoremap <Leader>v "*p
 nnoremap <Leader>k :NERDTreeToggle<CR>
 nnoremap <Leader>s :update<CR>
-nnoremap <Leader>tm 0iif __name__ == "__main__":<CR>pass<Esc>^
-nnoremap <Leader>pd oimport pdb; pdb.set_trace()<Esc>^
-nnoremap <Leader>pl olog = logging.getLogger(__name__)<Esc>^
 nnoremap <Leader>r :s/<C-r>"/
 nnoremap <Leader>m :make<CR>
 nnoremap <Leader>n :cn<CR>
 nnoremap <Leader>p :cp<CR>
+
+" leader p... - python shortcuts -- except just leader p
+nnoremap <Leader>pm 0iif __name__ == "__main__":<CR>pass<Esc>^
+nnoremap <Leader>pd odef f():<CR>pass<Esc>k0w^
+nnoremap <Leader>pl olog = logging.getLogger(__name__)<Esc>^
+
+" leader t - todo
+nnoremap <Leader>tn o- [ ] <Esc>^
+nnoremap <Leader>tx 0f[lrx^ 
+nnoremap <Leader>t<Space> 0f[lr ^ 
 
 " Search highlighting
 set incsearch
