@@ -75,13 +75,13 @@ nnoremap <Leader>p :cp<CR>
 
 " leader p... - python shortcuts -- except just leader p
 nnoremap <Leader>pm 0iif __name__ == "__main__":<CR>pass<Esc>^
-nnoremap <Leader>pd odef f():<CR>pass<Esc>k0w^
+nnoremap <Leader>pd odef f():<CR>pass<Esc>k0w
 nnoremap <Leader>pl olog = logging.getLogger(__name__)<Esc>^
 
 " leader t - todo
-nnoremap <Leader>tn o- [ ] <Esc>^
-nnoremap <Leader>tx 0f[lrx^ 
-nnoremap <Leader>t<Space> 0f[lr ^ 
+nnoremap <Leader>tn o- [ ] 
+nnoremap <Leader>tx mm0f[lrx`m
+nnoremap <Leader>t<Space> mm0f[lr `m
 
 " Search highlighting
 set incsearch
