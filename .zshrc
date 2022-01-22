@@ -13,6 +13,9 @@ export VIMRC=$HOME/.vimrc
 # Add ~/bin to path
 export PATH=$PATH:$HOME/bin
 
+# Add hledger journal file
+export LEDGER_FILE=~/workspace/bokforing/2022.journal
+
 # Aliases
 alias ll="ls -al"
 alias ly="lilypond"
