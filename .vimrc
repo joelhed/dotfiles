@@ -2,6 +2,7 @@ set nocompatible
 
 set showcmd
 set ruler
+colorscheme slate
 
 set exrc            " Read the .vimrc file from the current directory
 set secure          " Make sure that such .vimrc files can't run arbitrary stuff
@@ -16,7 +17,7 @@ set expandtab       " insert spaces when hitting TABs
 set softtabstop=4   " insert/delete 4 spaces when hitting a TAB/BACKSPACE
 set shiftround      " round indent to multiple of 'shiftwidth'
 set autoindent      " align the new line indent with the previous line
-set relativenumber  " add relative line numberings
+set number relativenumber  " add relative line numberings
 
 " remap jump to a subject in vim help
 map <C-å> <C-]>

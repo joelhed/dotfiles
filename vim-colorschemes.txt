@@ -1,0 +1,28 @@
+# higher = better
+
+evening
+slate
+desert
+lunaperche  # calm grey, maybe a bit too dark
+default     # has good borders
+habamax     # too dark
+
+koehler     # som default men sämre
+industry    # skrikig
+
+darkblue
+torte
+pablo       # nja
+elflord
+delek
+blue
+murphy    # grön
+ron         # turkos
+
+peachpuff   # intressant men inte för mig
+zellner
+shine       # ljus
+quiet       # vitsvart, ingen syntax highlighting
+morning     # ljus
+
+
