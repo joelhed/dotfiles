@@ -103,7 +103,7 @@ nnoremap <Leader>le :call ledger#entry()<cr>
 let g:vim_markdown_folding_disabled = 1
 
 " Fugitive
-nnoremap <Leader>gs :Gstat<CR>
+nnoremap <Leader>gs :Git<CR>
 
 " Ctrlp
 let g:ctrlp_custom_ignore = {
