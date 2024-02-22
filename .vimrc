@@ -57,14 +57,15 @@ nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
+nnoremap <C-,> <C-W><C-\>
 
 nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
 
 " Show column 80
-" if (exists('+colorcolumn'))
-"     set colorcolumn=80
-"     highlight ColorColumn ctermbg=9
-" endif
+if (exists('+colorcolumn'))
+    set colorcolumn=80
+    highlight ColorColumn ctermbg=234 guibg=#2c2d27
+endif
 
 nnoremap <Leader>v "*p
 nnoremap <Leader>k :NERDTreeToggle<CR>
